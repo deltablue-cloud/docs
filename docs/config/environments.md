@@ -16,6 +16,10 @@ Environment variables are values that are set on the server that Craft is runnin
 
 They can be set in multiple ways – for example some hosts provide a UI for defining environment variables – but in general we recommend you set them in the `.env` file that comes with new Craft 3 projects. `.env` files are special because they don’t get committed to Git like the rest of your project’s files. So it’s a good place to put information that is sensitive or likely to change for each environment.
 
+::: warning
+Environment variables defined in your `.env` file will not overwrite existing environment variables that are already set in the environment.
+:::
+
 To set a new environment variable, open up your `.env` file and add it like this:
 
 ```bash
